@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RansaNet</string>
+    <string name="pedido">Solicitar entrega</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">Inicie Sesión</string>
+    <string name="solicitar">Solicitar servicio de Almacén</string>
+    <string name="estado">Verificar Estado de pedido</string>
+    <string name="title_activity_consulta_estado">ConsultaEstadoActivity</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
