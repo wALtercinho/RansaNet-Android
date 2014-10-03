@@ -19,6 +19,8 @@ public class CustomerTO implements Serializable {
 	private String contact;
 	private Double discount;
 	private String methodOfPayment;
+	private String name;
+	private String lastName;
 	
 	private String user;
 	private String password;
@@ -101,8 +103,17 @@ public class CustomerTO implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	
-	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}	
 }
 

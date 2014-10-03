@@ -4,10 +4,13 @@
     <string name="app_name">RansaNet</string>
     <string name="pedido">Solicitar entrega</string>
     <string name="hello_world">Hello world!</string>
-    <string name="login">Inicie Sesión</string>
+    <string name="login">RansaNet</string>
     <string name="solicitar">Solicitar servicio de Almacén</string>
     <string name="estado">Verificar Estado de pedido</string>
     <string name="title_activity_consulta_estado">ConsultaEstadoActivity</string>
     <string name="action_settings">Settings</string>
+    <string name="estadoPedido">Estado</string>
+    <string name="fecini">Fec. Inicio</string>
+    <string name="fecfin">Fec. Fin</string>
 
 </resources>

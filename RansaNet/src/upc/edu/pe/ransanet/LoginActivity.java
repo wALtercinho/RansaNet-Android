@@ -28,9 +28,7 @@ public class LoginActivity extends Activity {
 		password = (EditText) findViewById(R.id.txtPassword);
 
 		login.setText("");
-		password.setText("");
-		
-		
+		password.setText("");		
     }
 
 
@@ -40,9 +38,10 @@ public class LoginActivity extends Activity {
 		StrictMode.setThreadPolicy(policy); 
 		
 		InvocaWS a=new InvocaWS();
-		boolean loginres=a.login(login.getText().toString(), password.getText().toString());
+		CustomerTO customerTO=new CustomerTO();
+		customerTO=a.loginDatos(login.getText().toString(), password.getText().toString());
 			
-		if(loginres){
+		if(customerTO.getLastName()!=null && !customerTO.getLastName().equalsIgnoreCase("")){
 			finish();
 		Intent intent = new Intent(LoginActivity.this,
 				MainActivity.class);
@@ -52,8 +51,7 @@ public class LoginActivity extends Activity {
 		Toast.makeText(LoginActivity.this, "Usuario y/o Password incorrecto",
 				Toast.LENGTH_LONG).show();
 		}
-			
-			
+					
 		}
 
 	}
